@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    <form action="." method="post">
+        {% csrf_token %}
+        <p>ID: <input type="text" name="ID"></p>
+        <input type="submit" value="send"></p>
+    </form>
+
+    {% for fbk in mikus %}
+    {{ fbk.id}}-{{ fbk.x}}
+    <br>
+    {% endfor %}
+    </body>
+</html>
