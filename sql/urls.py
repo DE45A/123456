@@ -22,4 +22,5 @@ urlpatterns = [
     path('test/', test),
     path('add/', add),
     path('del/', dele),
+    path('', add, name="simple_crawl"),
 ]
