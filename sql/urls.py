@@ -15,12 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from haato.views import test, add, dele
+from haato.views import miku
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('test/', test),
-    path('add/', add),
-    path('del/', dele),
-    path('', add, name="simple_crawl"),
+    path('', miku),
 ]

@@ -4,4 +4,5 @@ from django.db import models
 
 
 class Miku(models.Model):
-    x = models.DecimalField(max_digits=5, decimal_places=0)
+    x = models.CharField(max_length=20)
+    y = models.CharField(max_length=20)

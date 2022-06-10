@@ -4,12 +4,13 @@
     <body>
     <form action="." method="post">
         {% csrf_token %}
-        <p>ID: <input type="text" name="ID"></p>
+        <p>姓名: <input type="text" name="X"></p>
+        <p>內容: <input type="text" name="Y"></p>
         <input type="submit" value="send"></p>
     </form>
 
     {% for fbk in mikus %}
-    {{ fbk.id}}-{{ fbk.x}}
+    {{ fbk.x}} say {{ fbk.y}}
     <br>
     {% endfor %}
     </body>
